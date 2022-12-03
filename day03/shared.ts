@@ -32,12 +32,10 @@ export function getUniques(compartment: string): string {
 }
 
 export function getItemPriority(item: string) {
-  const charCode = item.charCodeAt(0);
-  if(item === item.toUpperCase()) {
-    return charCode - 65 + 27; // ascii value for 'A' is 65, priority is 27
-  } else {
-    return charCode - 97 + 1; // ascii value for 'a' is 97, priority is 1;
-  }
+  const code = item.charCodeAt(0);
+  // ascii value for 'A' is 65, priority is 27
+  // ascii value for 'a' is 97, priority is 1;
+  return item === item.toUpperCase() ? code - 65 + 27 : code - 97 + 1;
 }
 
 export function getCommonItem(inventories: string[]): string {
