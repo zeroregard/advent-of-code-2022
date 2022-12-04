@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { EMPTY_LINE, NEW_LINE } from '../util';
+import { NEW_LINE } from '../util';
 
 export function getRucksacks(): string[] {
   return fs.readFileSync('day03/input.txt','utf8').split(NEW_LINE);
