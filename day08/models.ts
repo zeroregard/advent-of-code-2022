@@ -1,11 +1,3 @@
-export interface TreeNode {
-  height: number;
-  left?: TreeNode;
-  up?: TreeNode;
-  right?: TreeNode;
-  down?: TreeNode;
-}
-
 export enum Direction {
   UP,
   RIGHT,

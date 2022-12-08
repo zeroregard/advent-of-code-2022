@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { NEW_LINE } from '../util';
-import { Coordinates, Direction, TreeNode, VisibilityResult } from './models';
+import { Coordinates, Direction, VisibilityResult } from './models';
 import { getAdjacentCoords, safe2DGet } from './util';
 
 export function getForestInput(): string {
